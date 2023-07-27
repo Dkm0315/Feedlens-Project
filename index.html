@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <h1>Reviews</h1>
+  </header>
+  <div class="container">
+    <div class="filters">
+      <h2>Filters</h2>
+      <div class="filter">
+        <label for="date">Date:</label>
+        <div class="custom-select-wrapper">
+          <select id="date" class="custom-select">
+            <option value="all">All</option>
+            <!-- Add options for Date filter -->
+          </select>
+          <div class="dropdown-icon"><i class="fas fa-chevron-down"></i></div>
+        </div>
+      </div>
+      <div class="filter">
+        <label for="app-version">App Version:</label>
+        <div class="custom-select-wrapper">
+          <select id="app-version" class="custom-select">
+            <option value="all">All</option>
+            <!-- Add options for App Version filter -->
+          </select>
+          <div class="dropdown-icon"><i class="fas fa-chevron-down"></i></div>
+        </div>
+      </div>
+      <div class="filter">
+        <label for="rating">Rating:</label>
+        <div class="custom-select-wrapper">
+          <select id="rating" class="custom-select">
+            <option value="all">All</option>
+            <!-- Add options for Rating filter -->
+          </select>
+          <div class="dropdown-icon"><i class="fas fa-chevron-down"></i></div>
+        </div>
+      </div>
+      <!-- Add the Apply and Reset buttons -->
+      <div class="button-container">
+        <button id="applyFilters" class="apply-filters">Apply</button>
+        <button id="resetFilters" class="reset-filters">Reset</button>
+      </div>
+
+      <div id="filterTags" class="filter-tags"></div>
+    </div>
+    <div class="reviews" id="reviewCards">
+      <h2>Reviews</h2>
+      <!-- Review cards will be added dynamically using JavaScript -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
